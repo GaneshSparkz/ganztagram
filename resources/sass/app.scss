@@ -1,0 +1,68 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-brand {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.container {
+    padding-left: 70px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.profile-top {
+    padding-left: 110px;
+}
+
+.username {
+    font-size: 32px;
+}
+
+.file-upload__label {
+  display: block;
+  padding: 1em 2em;
+  color: #fff;
+  background: #ba56d4;
+  border-radius: .4em;
+  transition: background .3s;
+
+  &:hover {
+     cursor: pointer;
+     background: #e01344;
+  }
+}
+
+.file-upload__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1;
+    width:0;
+    height: 100%;
+    opacity: 0;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.special-link:hover {
+    text-decoration: none;
+}
+
+.card-header, .card-footer {
+    background-color: #fff !important;
+}
