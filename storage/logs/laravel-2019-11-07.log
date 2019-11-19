@@ -1,0 +1,126 @@
+[2019-11-07 13:23:02] local.ERROR: Command "make:auth" is not defined.
+
+Did you mean one of these?
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:auth\" is not defined.
+
+Did you mean one of these?
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at D:\\xampp\\htdocs\\ganztagram\\vendor\\symfony\\console\\Application.php:660)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\ganztagram\\vendor\\symfony\\console\\Application.php(237): Symfony\\Component\\Console\\Application->find('make:auth')
+#1 D:\\xampp\\htdocs\\ganztagram\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 D:\\xampp\\htdocs\\ganztagram\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-11-07 14:09:13] local.ERROR: Database (D:\xampp\htdocs\ganztagram\database\database.sqlite) does not exist. (SQL: PRAGMA foreign_keys = ON;) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 0): Database (D:\\xampp\\htdocs\\ganztagram\\database\\database.sqlite) does not exist. (SQL: PRAGMA foreign_keys = ON;) at D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:665)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(625): Illuminate\\Database\\Connection->runQueryCallback('PRAGMA foreign_...', Array, Object(Closure))
+#1 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(460): Illuminate\\Database\\Connection->run('PRAGMA foreign_...', Array, Object(Closure))
+#2 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(266): Illuminate\\Database\\Connection->statement('PRAGMA foreign_...')
+#3 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\SQLiteConnection.php(33): Illuminate\\Database\\Schema\\Builder->enableForeignKeyConstraints()
+#4 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(278): Illuminate\\Database\\SQLiteConnection->__construct(Object(Closure), 'D:\\\\xampp\\\\htdocs...', '', Array)
+#5 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('sqlite', Object(Closure), 'D:\\\\xampp\\\\htdocs...', '', Array)
+#6 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#7 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(131): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'sqlite')
+#8 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(86): Illuminate\\Database\\DatabaseManager->makeConnection('sqlite')
+#9 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(199): Illuminate\\Database\\DatabaseManager->connection('sqlite')
+#10 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(167): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->getConnection()
+#11 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(585): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#12 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#13 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#14 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#15 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#16 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(520): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#17 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): value(Object(Closure))
+#18 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#19 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(591): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#20 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#21 D:\\xampp\\htdocs\\ganztagram\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#22 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#23 D:\\xampp\\htdocs\\ganztagram\\vendor\\symfony\\console\\Application.php(934): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 D:\\xampp\\htdocs\\ganztagram\\vendor\\symfony\\console\\Application.php(273): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 D:\\xampp\\htdocs\\ganztagram\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#28 D:\\xampp\\htdocs\\ganztagram\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 {main}
+
+[previous exception] [object] (InvalidArgumentException(code: 0): Database (D:\\xampp\\htdocs\\ganztagram\\database\\database.sqlite) does not exist. at D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\SQLiteConnector.php:34)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(218): Illuminate\\Database\\Connectors\\SQLiteConnector->connect(Array)
+#1 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#2 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(920): call_user_func(Object(Closure))
+#3 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(453): Illuminate\\Database\\Connection->getPdo()
+#4 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(658): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('PRAGMA foreign_...', Array)
+#5 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(625): Illuminate\\Database\\Connection->runQueryCallback('PRAGMA foreign_...', Array, Object(Closure))
+#6 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(460): Illuminate\\Database\\Connection->run('PRAGMA foreign_...', Array, Object(Closure))
+#7 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(266): Illuminate\\Database\\Connection->statement('PRAGMA foreign_...')
+#8 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\SQLiteConnection.php(33): Illuminate\\Database\\Schema\\Builder->enableForeignKeyConstraints()
+#9 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(278): Illuminate\\Database\\SQLiteConnection->__construct(Object(Closure), 'D:\\\\xampp\\\\htdocs...', '', Array)
+#10 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(76): Illuminate\\Database\\Connectors\\ConnectionFactory->createConnection('sqlite', Object(Closure), 'D:\\\\xampp\\\\htdocs...', '', Array)
+#11 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(50): Illuminate\\Database\\Connectors\\ConnectionFactory->createSingleConnection(Array)
+#12 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(131): Illuminate\\Database\\Connectors\\ConnectionFactory->make(Array, 'sqlite')
+#13 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(86): Illuminate\\Database\\DatabaseManager->makeConnection('sqlite')
+#14 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(199): Illuminate\\Database\\DatabaseManager->connection('sqlite')
+#15 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\DatabaseMigrationRepository.php(167): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->getConnection()
+#16 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(585): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#17 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(91): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#18 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(63): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#19 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#20 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#21 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(520): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): value(Object(Closure))
+#23 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#24 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(591): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#25 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(202): Illuminate\\Container\\Container->call(Array)
+#26 D:\\xampp\\htdocs\\ganztagram\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#27 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(189): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#28 D:\\xampp\\htdocs\\ganztagram\\vendor\\symfony\\console\\Application.php(934): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#29 D:\\xampp\\htdocs\\ganztagram\\vendor\\symfony\\console\\Application.php(273): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 D:\\xampp\\htdocs\\ganztagram\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 D:\\xampp\\htdocs\\ganztagram\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 D:\\xampp\\htdocs\\ganztagram\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 {main}
+"} 
