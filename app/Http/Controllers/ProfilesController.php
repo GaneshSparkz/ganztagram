@@ -45,7 +45,7 @@ class ProfilesController extends Controller
         ]);
 
         if (request('profile_pic')) {
-            $imagePath = request('profile_pic')->store('uploads', 'public');
+            $imagePath = request('profile_pic')->store('profiles', 'public');
             $image = Image::make(public_path("storage/{$imagePath}"))->fit(1000, 1000);
             $image->save();
             auth()->user()->profile->update(array_merge($data, ['profile_pic' => $imagePath]));
