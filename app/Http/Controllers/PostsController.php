@@ -32,7 +32,7 @@ class PostsController extends Controller
             'caption' => 'required',
         ]);
 
-        $imagePath = request('image')->store('profiles', 'public');
+        $imagePath = request('image')->store('uploads', 'public');
         $image = Image::make(public_path("storage/{$imagePath}"))->fit(1200, 1200);
         $image->save();
 
